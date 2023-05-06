@@ -1,0 +1,16 @@
+body {background-color: whitesmoke;}
+.social-icons img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  .whatsapp-float img {
+    width: 40px;
+    height: auto;
+  }
