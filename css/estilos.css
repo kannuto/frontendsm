@@ -2,6 +2,12 @@ body {background-color: whitesmoke;}
 .social-icons img {
   max-width: 30px;
   max-height: 30px;
+  font-family: 'Gonstar', Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Gonstar';
+  src: url('./fonts/Gonstar.otf') format('opentype');
 }
 .whatsapp-float {
     position: fixed;
@@ -25,13 +31,14 @@ header {
 }
 
 header img {
-  max-width: 200px;
-  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
 }
 
 header h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 3em;
+  margin-bottom: 1em;
   font-family: 'Roboto Slab', serif;
   color: #fff;
 }
@@ -85,6 +92,6 @@ footer {
 .developer-info {
   flex: 1;
   max-width: 50%;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.5;
 }
