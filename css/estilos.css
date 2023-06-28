@@ -1,4 +1,8 @@
-body {background-color: whitesmoke;}
+/* Estilos generales */
+body {
+  background-color: whitesmoke;
+}
+
 .social-icons img {
   max-width: 30px;
   max-height: 30px;
@@ -9,17 +13,7 @@ body {background-color: whitesmoke;}
   font-family: 'Gonstar';
   src: url('./fonts/Gonstar.otf') format('opentype');
 }
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-  }
 
-  .whatsapp-float img {
-    width: 40px;
-    height: auto;
-  }
 /* Estilos del encabezado */
 header {
   background-color: #FFE6E6;
@@ -42,6 +36,62 @@ header h1 {
   font-family: 'Roboto Slab', serif;
   color: #fff;
 }
+
+/* Estilos de los puntos de quiebre */
+@media only screen and (max-width: 768px) {
+  /* Punto de quiebre para dispositivos móviles */
+  body {
+    background-color: lightgray;
+  }
+
+  header {
+    background-color: #FFCCCC;
+  }
+
+  /* Insertar elemento que aparezca en el celular */
+  .whatsapp-float {
+    display: block;
+  }
+
+  /* Ocultar elemento en la computadora */
+  .developer-info {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Punto de quiebre para tablets */
+  body {
+    background-color: lightblue;
+  }
+
+  header {
+    background-color: #CCFFCC;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Punto de quiebre para computadoras */
+  body {
+    background-color: lightgreen;
+  }
+
+  header {
+    background-color: #CCCCFF;
+  }
+
+  /* Insertar elemento que desaparezca en la computadora */
+  .whatsapp-float {
+    display: none;
+  }
+
+  /* Mostrar elemento en la computadora */
+  .developer-info {
+    display: block;
+  }
+}
+
+/* Estilos del pie de página */
 footer {
   background-color: #FFE6E6;
   padding: 20px;
@@ -50,19 +100,6 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
-.social-icons {
-  display: flex;
-}
-
-.social-icons a {
-  margin: 0 10px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-}
-
 
 .mapa {
   flex: 1;
@@ -73,7 +110,6 @@ footer {
   width: 100%;
   height: 300px;
 }
-
 
 .social-icons {
   display: flex;
@@ -86,12 +122,4 @@ footer {
 
 .social-icons img {
   width: 30px;
-  height: 30px;
-}
-
-.developer-info {
-  flex: 1;
-  max-width: 50%;
-  font-size: 1em;
-  line-height: 1.5;
-}
+  height: 30
