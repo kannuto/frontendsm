@@ -123,3 +123,10 @@ footer {
 .social-icons img {
   width: 30px;
   height: 30
+}
+
+.custom-img-size {
+  width: 100%;
+  height: 200px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: cover;
+}
