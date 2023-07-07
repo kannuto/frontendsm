@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  background-color: whitesmoke;
+  background-color: #f8f8f8;
 }
 
 .social-icons img {
@@ -16,7 +16,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-  background-color: #FFE6E6;
+  background-color: #f1f1f1;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -34,18 +34,18 @@ header h1 {
   font-size: 3em;
   margin-bottom: 1em;
   font-family: 'Roboto Slab', serif;
-  color: #fff;
+  color: #000;
 }
 
 /* Estilos de los puntos de quiebre */
 @media only screen and (max-width: 768px) {
   /* Punto de quiebre para dispositivos móviles */
   body {
-    background-color: lightgray;
+    background-color: #f5f5f5;
   }
 
   header {
-    background-color: #FFCCCC;
+    background-color: #ededed;
   }
 
   /* Insertar elemento que aparezca en el celular */
@@ -62,22 +62,22 @@ header h1 {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* Punto de quiebre para tablets */
   body {
-    background-color: lightblue;
+    background-color: #f2f2f2;
   }
 
   header {
-    background-color: #CCFFCC;
+    background-color: #f2f2f2;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   /* Punto de quiebre para computadoras */
   body {
-    background-color: lightgreen;
+    background-color: #f8f8f8;
   }
 
   header {
-    background-color: #CCCCFF;
+    background-color: #f1f1f1;
   }
 
   /* Insertar elemento que desaparezca en la computadora */
@@ -93,7 +93,7 @@ header h1 {
 
 /* Estilos del pie de página */
 footer {
-  background-color: #FFE6E6;
+  background-color: #f1f1f1;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -122,7 +122,7 @@ footer {
 
 .social-icons img {
   width: 30px;
-  height: 30
+  height: 30;
 }
 
 .custom-img-size {
@@ -130,3 +130,11 @@ footer {
   height: 200px; /* Ajusta este valor según el tamaño deseado */
   object-fit: cover;
 }
+
+/* Estilos del modo nocturno */
+.modo-nocturno {
+  background-color: #171212;
+  color: #ffffff; /* Cambia el color de fuente a blanco */
+}
+
+
