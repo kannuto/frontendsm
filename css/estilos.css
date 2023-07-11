@@ -137,4 +137,80 @@ footer {
   color: #ffffff; /* Cambia el color de fuente a blanco */
 }
 
+/* Estilos del logo en la barra de navegación */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  max-width: 100px; /* Ajusta el tamaño máximo según tus necesidades */
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  width: 80px; /* Ajusta el ancho deseado para la imagen */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-family: 'Roboto Slab', serif;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  border: 1px solid #ddd; /* Añade un borde de 1px con color gris claro */
+  border-radius: 4px; /* Aplica esquinas redondeadas */
+}
+
+.navbar-brand {
+  padding: 0.5rem 1rem; /* Ajusta el espaciado interno del logo */
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Ajusta el espaciado interno de los enlaces */
+}
+
+/* Cambia el color del enlace activo */
+.navbar-nav .nav-item.active .nav-link {
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+.nav-link {
+  font-size: 25px; /* Ajusta el tamaño de fuente deseado */
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  flex-direction: row-reverse;
+}
 
