@@ -1,0 +1,216 @@
+/* Estilos generales */
+body {
+  background-color: #f8f8f8;
+}
+
+.social-icons img {
+  max-width: 30px;
+  max-height: 30px;
+  font-family: 'Gonstar', Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Gonstar';
+  src: url('./fonts/Gonstar.otf') format('opentype');
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-family: 'Roboto Slab', serif;
+  color: #000;
+}
+
+/* Estilos de los puntos de quiebre */
+@media only screen and (max-width: 768px) {
+  /* Punto de quiebre para dispositivos móviles */
+  body {
+    background-color: #f5f5f5;
+  }
+
+  header {
+    background-color: #ededed;
+  }
+
+  /* Insertar elemento que aparezca en el celular */
+  .whatsapp-float {
+    display: block;
+  }
+
+  /* Ocultar elemento en la computadora */
+  .developer-info {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Punto de quiebre para tablets */
+  body {
+    background-color: #f2f2f2;
+  }
+
+  header {
+    background-color: #f2f2f2;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Punto de quiebre para computadoras */
+  body {
+    background-color: #f8f8f8;
+  }
+
+  header {
+    background-color: #f1f1f1;
+  }
+
+  /* Insertar elemento que desaparezca en la computadora */
+  .whatsapp-float {
+    display: none;
+  }
+
+  /* Mostrar elemento en la computadora */
+  .developer-info {
+    display: block;
+  }
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mapa {
+  flex: 1;
+  max-width: 30%;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30;
+}
+
+.custom-img-size {
+  width: 100%;
+  height: 200px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: cover;
+}
+
+/* Estilos del modo nocturno */
+.modo-nocturno {
+  background-color: #171212;
+  color: #ffffff; /* Cambia el color de fuente a blanco */
+}
+
+/* Estilos del logo en la barra de navegación */
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  max-width: 100px; /* Ajusta el tamaño máximo según tus necesidades */
+  height: auto;
+  margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  width: 80px; /* Ajusta el ancho deseado para la imagen */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-family: 'Roboto Slab', serif;
+  color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  border: 1px solid #ddd; /* Añade un borde de 1px con color gris claro */
+  border-radius: 4px; /* Aplica esquinas redondeadas */
+}
+
+.navbar-brand {
+  padding: 0.5rem 1rem; /* Ajusta el espaciado interno del logo */
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Ajusta el espaciado interno de los enlaces */
+}
+
+/* Cambia el color del enlace activo */
+.navbar-nav .nav-item.active .nav-link {
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+.nav-link {
+  font-size: 25px; /* Ajusta el tamaño de fuente deseado */
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  flex-direction: row-reverse;
+}
+
